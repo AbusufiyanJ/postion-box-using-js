@@ -1,31 +1,8 @@
 <!DOCTYPE <html>
     <head>
-            <style>
-                    .grid-container {
-                      display: grid;
-        
-                      grid-gap: 5px;
-                      background-color: #2196F3;
-                      padding: 1px;
-                      
-                    }
-                    
-                    .grid-container > div {
-                      background-color: aliceblue;
-                      text-align: center;
-                      padding: 20px;
-                      font-size: 30px;
-                    
-                    }
-                    
-                    .item1 {
-                      grid-row: 1;
-                    }
-                    </style>
-
-
+        <link rel="stylesheet" href="style.css"> 
 <body>
-        <div class="grid-container">
+        <div id="grid-container">
                 <div class="item1"></div>
                 <div class="item2"></div>
                 <div class="item3"></div>  
@@ -64,37 +41,6 @@
     </form>
 
 </body>
-<script>
-
-
-
-function move(direction) {
-    var layerText = document.getElementById("newtext");
-
-
-
-    switch (direction) {
-        case "left":
-            layerText.style.left = "50px";
-            break;
-
-        case "left":
-            layerText.style.left = "100px";
-            break; 
-
-        case "right":
-            layerText.style.left = "150px";
-            break;
-
-        case "up":
-            layerText.style.top = "80px";
-            break;
-        case "down":
-            layerText.style.top = "125px";
-            break;
-    }
-    
-}
-</script>
-    </head>
+  <script src="script.js"></script>
+</head>
 </html>
