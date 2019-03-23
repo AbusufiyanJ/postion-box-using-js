@@ -1,0 +1,100 @@
+<!DOCTYPE <html>
+    <head>
+            <style>
+                    .grid-container {
+                      display: grid;
+        
+                      grid-gap: 5px;
+                      background-color: #2196F3;
+                      padding: 1px;
+                      
+                    }
+                    
+                    .grid-container > div {
+                      background-color: aliceblue;
+                      text-align: center;
+                      padding: 20px;
+                      font-size: 30px;
+                    
+                    }
+                    
+                    .item1 {
+                      grid-row: 1;
+                    }
+                    </style>
+
+
+<body>
+        <div class="grid-container">
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>  
+                <div class="item4"></div>
+                <div class="item5"></div>
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+                <div class="item4"></div>
+                <div class="item5"></div>  
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>
+                <div class="item4"></div>
+                <div class="item5"></div>
+                <div class="item1"></div>
+                <div class="item2"></div>  
+                <div class="item3"></div>
+                <div class="item4"></div>
+                <div class="item5"></div>
+                <div class="item1"></div>
+                <div class="item2"></div>
+                <div class="item3"></div>  
+                <div class="item4"></div>
+                <div class="item5"></div>
+              </div>
+    <div id="newtext" style="position:absolute; top:-2px; left: 50px">
+        <h2> Q </h2>
+    </div>
+
+    <form>
+        <input type="button" name="moveLayer" value="move Right" onclick="move('right');">
+        <input type="button" name="moveLayer" value="move Left" onclick="move('left');">
+        <input type="button" name="moveLayer" value="move Up" onclick="move('up'); ">
+        <input type="button" name="moveLayer" value="move Down" onclick="move('down'); ">
+    </form>
+
+</body>
+<script>
+
+
+
+function move(direction) {
+    var layerText = document.getElementById("newtext");
+
+
+
+    switch (direction) {
+        case "left":
+            layerText.style.left = "50px";
+            break;
+
+        case "left":
+            layerText.style.left = "100px";
+            break; 
+
+        case "right":
+            layerText.style.left = "150px";
+            break;
+
+        case "up":
+            layerText.style.top = "80px";
+            break;
+        case "down":
+            layerText.style.top = "125px";
+            break;
+    }
+    
+}
+</script>
+    </head>
+</html>
