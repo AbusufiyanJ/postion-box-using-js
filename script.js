@@ -1,7 +1,16 @@
+
+/*var button =document.getElementById("right"),
+count = 0;
+button.onclick = function() {
+    count += 1;
+    newtext.innerHTML =  layerText.style.left = "50px";
+}
+*/
+
+
+
 function move(direction) {
     var layerText = document.getElementById("newtext");
-
-
 
     switch (direction) {
         case "left":
