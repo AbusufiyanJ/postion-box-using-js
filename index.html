@@ -1,46 +1,21 @@
-<!DOCTYPE <html>
-    <head>
-        <link rel="stylesheet" href="style.css"> 
-<body>
-        <div id="grid-container">
-                <div class="item1"></div>
-                <div class="item2"></div>
-                <div class="item3"></div>  
-                <div class="item4"></div>
-                <div class="item5"></div>
-                <div class="item1"></div>
-                <div class="item2"></div>
-                <div class="item3"></div>
-                <div class="item4"></div>
-                <div class="item5"></div>  
-                <div class="item1"></div>
-                <div class="item2"></div>
-                <div class="item3"></div>
-                <div class="item4"></div>
-                <div class="item5"></div>
-                <div class="item1"></div>
-                <div class="item2"></div>  
-                <div class="item3"></div>
-                <div class="item4"></div>
-                <div class="item5"></div>
-                <div class="item1"></div>
-                <div class="item2"></div>
-                <div class="item3"></div>  
-                <div class="item4"></div>
-                <div class="item5"></div>
-              </div>
-    <div id="newtext" style="position:absolute; top:-2px; left: 50px">
-        <h2> Q </h2>
-    </div>
-
-    <form>
-        <input id="right" type="button" name="moveLayer" value="move Right" onclick="move('right');">
-        <input id="left" type="button" name="moveLayer" value="move Left" onclick="move('left');">
-        <input id="up" type="button" name="moveLayer" value="move Up" onclick="move('up'); ">
-        <input id="down" type="button" name="moveLayer" value="move Down" onclick="move('down'); ">
-    </form>
-
-</body>
-  <script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Square Navigation</title>
 </head>
+<body>
+    <div id='container'></div>
+ 
+    <section class = 'controls'>
+        <button class= 'btn btn__control' id='right'>&rArr; Right &rArr; </button>
+        <button class= 'btn btn__control' id='left'>&lArr;  Left &lArr;</button>
+        <button class= 'btn btn__control' id='top'>&uArr; Top &uArr;</button>
+        <button class= 'btn btn__control' id='bottom'>&dArr; Bottom &dArr;</button>
+    </section>
+    <script async src="square.js"></script>
+</body>
 </html>
