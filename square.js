@@ -11,7 +11,7 @@ const currentPosition = {
 // create table dynamically
 function createTable() {
     let { rows,cols } = tableParams;
-
+    
     let container = document.getElementById('container');
     let tbl = document.createElement("table");
     tbl.setAttribute("id", "table");
@@ -94,4 +94,3 @@ document.getElementById("bottom").addEventListener("click", moveBottom);
 document.getElementById("top").addEventListener("click", moveTop);
 
 window.onload=createTable; 
-
